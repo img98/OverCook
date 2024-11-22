@@ -16,10 +16,10 @@ class OVERCOOK_API URecipe : public UPrimaryDataAsset
 
 public:
 	UFUNCTION(BlueprintCallable)
-	void Compare(TMap<UFoodItem*, FIngredient> InIngredient, bool& Equal);
+	bool Compare(TMap<UFoodItem*, FIngredient> InIngredient);
 
 	UFUNCTION(BlueprintCallable)
-	void CompareIngredinets(FIngredient A, FIngredient B, bool& Equal);
+	bool CompareState(FIngredient A, FIngredient B);
 public:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
 	TMap<UFoodItem*, FIngredient> Ingredient;
