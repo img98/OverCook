@@ -105,7 +105,7 @@ Stage 시간이 만료되면 플레이 결과를 확인할 수 있습니다.
 
 # 플레이 영상
 
-[![OVERCOOK시연영상](http://img.youtu.com/vi/oniRT1I7YbA/0.jpg)](https://youtu.be/oniRT1I7YbA)
+[![OVERCOOK시연영상](http://img.youtube.com/vi/oniRT1I7YbA/0.jpg)](https://youtu.be/oniRT1I7YbA)
 (이미지 클릭 시, 링크 이동)
 
 > https://youtu.be/oniRT1I7YbA
