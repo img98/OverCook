@@ -32,7 +32,7 @@ Entry-Lobby-Stage 구조의 게임플레이 구조를 만들었습니다.
 
 참가 시에는 방장이 설정한 Lobby의 이름과 해당 세션 내에 참가하고 있는 유저명을 확인할 수 있습니다.
 
-AdvancedSessions를 사용하여 랜덤 세션에만 참가할 수 있던 원작 *overcooked*와는 달리, 발견한 세션의 이름이나 참여 유저명을 확인하여 선택하는 기능을 추가했습니다.
+랜덤 세션에만 참가할 수 있던 원작 *overcooked*와는 달리, AdvancedSessions를 사용하여 세션의 이름이나 참여 유저명을 확인하여 선택하는 기능을 추가했습니다.
 
 ![sessionname](https://github.com/user-attachments/assets/b65d067a-be1d-4d51-90c6-0dcf1242a2db)
 
@@ -49,7 +49,7 @@ Stage는 Ready-Play-Scoreboard 단계로 구분됩니다.
 
 Ready단계에서는 Level의 초기설정이 진행되며 모든 유저의 입력이 차단됩니다. 스테이지 초기화 및 셋업이 끝났다면 Play단계로 진입합니다.
 
-Play단계에서는 다시 유저들의 입력이 활성화 되고 남은 시간 타이머, 받은 주문(이하, OrderRecipe)과 같은 게임 기믹이 작동합니다.
+Play단계에서는 유저들의 입력이 재활성화 되고 남은 시간 타이머, 받을 주문과 같은 게임 기믹이 작동합니다.
 
 제한 시간이 끝나면 Scoreboard 단계로 진입합니다. 모든 유저의 입력이 차단되고 해당 Stage동안 성공적으로 제출한 음식과 실패한 음식, 최종 점수를 표시합니다.
 
@@ -58,9 +58,9 @@ Play단계에서는 다시 유저들의 입력이 활성화 되고 남은 시간
 
 결과 발표가 끝나면 다시 Lobby로 돌아오게 됩니다.
 
-돌아온 Lobby에서는 플레이했던 Stage의 점수가 해당 Stage 위젯에 표시되며, 결과에 따라 Stage액터 위에 클리어 동상이 표시 됩니다.
+Lobby에선 플레이했던 Stage의 점수가 위젯에 표시되며, 결과에 따라 Stage액터 위에 클리어 동상이 표시 됩니다.
 
-이 과정을 반복하며 모든 Stage를 클리어 하는 것이 게임의 목표입니다.
+위 과정을 반복하며 모든 Stage를 클리어 하는 것이 게임의 목표입니다.
 
 ![backscore](https://github.com/user-attachments/assets/a35c43dc-dc9e-4526-bf48-a81d0a2b29d6)
 
@@ -105,7 +105,7 @@ Stage 시간이 만료되면 플레이 결과를 확인할 수 있습니다.
 
 # 플레이 영상
 
-[![OVERCOOK시연영상](http://img.youtu.be/oniRT1I7YbA/0.jpg)](https://youtu.be/oniRT1I7YbA)
+[![OVERCOOK시연영상](http://img.youtu.com/vi/oniRT1I7YbA/0.jpg)](https://youtu.be/oniRT1I7YbA)
 (이미지 클릭 시, 링크 이동)
 
-> https://www.youtube.com/watch?v=oniRT1I7YbA
+> https://youtu.be/oniRT1I7YbA
