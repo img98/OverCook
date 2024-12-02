@@ -7,38 +7,40 @@
 총 3인의 팀으로 진행하였으며, 게임플레이 및 개발 프레임워크와 인터페이스 작업을 담당했습니다.
 
 
-# 세부 사항
+# :clipboard:세부 사항
 
 - 개요 : 친구들과 힘을 합쳐 제한 시간 안에 손님들의 주문대로 요리를 만들어내자.
 - 인원구성 : 3명(프로그래밍 2, 아트 1)
 - 목적 : GitHub를 사용하여 팀으로 개발하는 방법을 익히고, 게임플레이 프레임워크를 제작하여 실시간 데이터를 관리하고 유저에게 표시하는 인터페이스를 만들었습니다.
 - 개발 기간 : 2024.10.15 ~ 2024.11.22
 
-# 컨텐츠 및 기능
+# :ledger:컨텐츠 및 기능
 
 ## 게임플레이 프레임워크
 
-Entry-Lobby-Stage 구조의 게임플레이 구조를 만들었습니다.
+Entry-Lobby-Stage의 게임플레이 구조를 만들었습니다.
 
 ### Entry
 
 게임 시작 시, Entry에 입장하여 유저명을 입력하면 메뉴패널로 시점이 이동합니다.
 
-이러한 카메라 이동은 컨트롤러의 ViewTarget 조정을 통해 구현했으며, 해당 패널 액터의 위젯을 클릭해 새로운 세션을 생성하거나 이미 존재하는 세션에 참가할 수 있습니다.
+-컨트롤러의 ViewTarget 조정을 통해 시점 이동을 구현했습니다.
+
+해당 패널 액터의 위젯을 클릭해 새로운 세션을 생성하거나 이미 존재하는 세션에 참가할 수 있습니다.
 
 ![entrygif](https://github.com/user-attachments/assets/16a78e8d-fde5-4bf8-a502-fa35017cbe9c)
 
 ### Lobby
 
-참가 시에는 방장이 설정한 Lobby의 이름과 해당 세션 내에 참가하고 있는 유저명을 확인할 수 있습니다.
+참가 시에는 '방장이 설정한 Lobby의 이름'과 해당 세션 내에 '참가하고 있는 유저명'을 확인할 수 있습니다.
 
-랜덤 세션에만 참가할 수 있던 원작 *overcooked*와는 달리, AdvancedSessions를 사용하여 세션의 이름이나 참여 유저명을 확인하여 선택하는 기능을 추가했습니다.
+- 랜덤 세션에만 참가할 수 있던 원작 *overcooked*와는 달리, AdvancedSessions를 사용하여 세션의 이름이나 참여 유저명을 확인하여 선택하는 기능을 추가했습니다.
 
 ![sessionname](https://github.com/user-attachments/assets/b65d067a-be1d-4d51-90c6-0dcf1242a2db)
 
 Lobby 에서는 플레이 할 Stage에 대한 정보를 확인할 수 있으며 팀원들과 채팅을 통해 소통하여 Stage를 선택하고 이동합니다.
 
-해당 정보는 실제로 Stage레벨에 전송되며 초기화에 사용됩니다.
+해당 정보는 Stage레벨로 이동 시, 함께 전송되며 초기화에 사용됩니다.
 
 ![lobbystageinfo](https://github.com/user-attachments/assets/1c50a4cd-501f-466f-9933-f280f8c101e3) |![stageinfo](https://github.com/user-attachments/assets/cf899b7b-572b-4372-b908-3994fb269da5)
 --- | --- | 
